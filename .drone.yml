@@ -1,7 +1,7 @@
 pipeline:
   build:
-  image: docker
-  volumes: 
+    image: docker
+    volumes: 
     - /var/run/docker.sock:/var/run/docker.sock
-  commeands:
+    commands:
     - docker build -t <paulgregory88>/example-webserver .
